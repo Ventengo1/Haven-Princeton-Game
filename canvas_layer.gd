@@ -7,6 +7,6 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	# "ui_accept" is mapped to the Enter key (and Spacebar) by default in Godot
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("Enter"):
 		get_tree().paused = false # Unpause the main game
 		queue_free() # Delete the black screen and text
