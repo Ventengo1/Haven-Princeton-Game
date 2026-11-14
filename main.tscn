@@ -983,7 +983,18 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 1.0
+"speed": 4.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jkeq5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_kek77")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
 }]
 
 [node name="Node" type="Node" unique_id=492344572]
@@ -1012,46 +1023,39 @@ tile_set = SubResource("TileSet_7dm0k")
 position = Vector2(97, 545)
 
 [node name="WR3" type="AnimatedSprite2D" parent="Player" unique_id=901339676]
-position = Vector2(107.385284, -133.4715)
-scale = Vector2(0.0005486811, 0.00029591998)
+position = Vector2(104.00001, -143.5)
+scale = Vector2(0.16585359, 0.15927747)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
 frame_progress = 0.16683319
 
 [node name="WR1" type="AnimatedSprite2D" parent="Player" unique_id=1752282770]
-position = Vector2(91.00003, -116)
-scale = Vector2(0.15304883, 0.13115764)
+position = Vector2(363, -109.000015)
+scale = Vector2(0.18384154, 0.17066917)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
 frame_progress = 0.16683319
 
 [node name="WR2" type="AnimatedSprite2D" parent="Player" unique_id=348595047]
-position = Vector2(104.927475, -131.2143)
-scale = Vector2(0.023423944, 0.017202325)
+position = Vector2(290.00003, -158)
+scale = Vector2(0.24568143, 0.19215734)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
 frame_progress = 0.16683319
 
 [node name="TE1" type="AnimatedSprite2D" parent="Player" unique_id=187512676]
-position = Vector2(104.927475, -131.2143)
-scale = Vector2(0.023423944, 0.017202325)
+position = Vector2(384.00003, -228)
+scale = Vector2(0.20421802, 0.17737901)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
 frame_progress = 0.16683319
 
 [node name="RB" type="AnimatedSprite2D" parent="Player" unique_id=1987113820]
-position = Vector2(104.927475, -131.2143)
-scale = Vector2(0.023423944, 0.017202325)
+position = Vector2(184, -223)
+scale = Vector2(0.16674316, 0.16258113)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
 frame_progress = 0.16683319
 
-[node name="QB" type="AnimatedSprite2D" parent="Player" unique_id=1405191576]
-position = Vector2(107.385284, -133.4715)
-scale = Vector2(0.0005486811, 0.00029591998)
-sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame = 2
-frame_progress = 0.16683319
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129669833]
+position = Vector2(246, 420.99994)
+scale = Vector2(0.1736527, 0.17322835)
+sprite_frames = SubResource("SpriteFrames_jkeq5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2122061435]
 process_mode = 3
