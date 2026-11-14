@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://bdyxnkavrnpia" path="res://Solid_white_bordered.png" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://cth3wvmoa1xk7" path="res://Dark_green.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://i7fweo5y184k" path="res://Light_green.png" id="3_lquwl"]
-[ext_resource type="Script" uid="uid://djugefm05s66x" path="res://player.gd" id="4_272bh"]
 [ext_resource type="Texture2D" uid="uid://bs7qs0kbev25j" path="res://Solid_black.png" id="6_5vw27"]
 [ext_resource type="Texture2D" uid="uid://dspfy2y7vq6nr" path="res://quarterback-standing-removebg-preview.png" id="6_kek77"]
 [ext_resource type="Texture2D" uid="uid://dsqxo5pmfq8a0" path="res://run1-removebg-preview.png" id="7_4c57u"]
@@ -1013,7 +1012,6 @@ tile_map_data = PackedByteArray("AAAKAPj/AAAIAAgAAAALAPj/AAAIAAgAAAAMAPj/AAAIAAg
 tile_set = SubResource("TileSet_7dm0k")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=943146190]
-script = ExtResource("4_272bh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1752282770]
 position = Vector2(91.00003, -116)
