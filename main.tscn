@@ -6,8 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://bs7qs0kbev25j" path="res://Solid_black.png" id="6_5vw27"]
 [ext_resource type="Texture2D" uid="uid://dpqh57ilfjnjk" path="res://Screenshot_2026-11-14_134727-removebg-preview.png" id="6_kek77"]
 [ext_resource type="Texture2D" uid="uid://dsqxo5pmfq8a0" path="res://run1-removebg-preview.png" id="7_4c57u"]
+[ext_resource type="Texture2D" uid="uid://h42t2yjqlhhc" path="res://image-removebg-preview.png" id="8_dg77c"]
 [ext_resource type="Texture2D" uid="uid://dccfkoovcqj53" path="res://run2-removebg-preview.png" id="8_efxa6"]
 [ext_resource type="Script" uid="uid://bk0yrk7nxprc6" path="res://canvas_layer.gd" id="9_kek77"]
+[ext_resource type="Texture2D" uid="uid://8yb68psw7lpg" path="res://image__1_-removebg-preview.png" id="9_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://dr4g7q3ks0nla" path="res://image__2_-removebg-preview.png" id="10_w48qg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("1_h2yge")
@@ -982,8 +985,25 @@ animations = [{
 "texture": ExtResource("8_efxa6")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"Ball",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_dg77c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ycdy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w48qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ycdy4")
+}],
+"loop": 1,
+"name": &"no ball",
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jkeq5"]
@@ -993,7 +1013,15 @@ animations = [{
 "texture": ExtResource("6_kek77")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"Ball",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ycdy4")
+}],
+"loop": 1,
+"name": &"no Ball",
 "speed": 5.0
 }]
 
@@ -1026,36 +1054,38 @@ position = Vector2(97, 545)
 position = Vector2(104.00001, -143.5)
 scale = Vector2(0.16585359, 0.15927747)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame_progress = 0.16683319
+animation = &"no ball"
 
 [node name="WR1" type="AnimatedSprite2D" parent="Player" unique_id=1752282770]
 position = Vector2(363, -109.000015)
 scale = Vector2(0.18384154, 0.17066917)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame_progress = 0.16683319
+animation = &"Ball"
 
 [node name="WR2" type="AnimatedSprite2D" parent="Player" unique_id=348595047]
 position = Vector2(290.00003, -158)
 scale = Vector2(0.24568143, 0.19215734)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame_progress = 0.16683319
+animation = &"Ball"
 
 [node name="TE1" type="AnimatedSprite2D" parent="Player" unique_id=187512676]
 position = Vector2(384.00003, -228)
 scale = Vector2(0.20421802, 0.17737901)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame_progress = 0.16683319
+animation = &"Ball"
 
 [node name="RB" type="AnimatedSprite2D" parent="Player" unique_id=1987113820]
 position = Vector2(184, -223)
 scale = Vector2(0.16674316, 0.16258113)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
-frame_progress = 0.16683319
+animation = &"Ball"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129669833]
+[node name="QB" type="AnimatedSprite2D" parent="." unique_id=1129669833]
 position = Vector2(246, 420.99994)
 scale = Vector2(0.1736527, 0.17322835)
 sprite_frames = SubResource("SpriteFrames_jkeq5")
+animation = &"Ball"
+frame_progress = 0.7993653
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2122061435]
 process_mode = 3
