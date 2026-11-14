@@ -1205,7 +1205,7 @@ animation = &"no ball"
 script = ExtResource("19_a6jrf")
 
 [node name="CB2" type="AnimatedSprite2D" parent="Defender" unique_id=1839850335]
-position = Vector2(522.5852, 209.96744)
+position = Vector2(399.00006, 277)
 rotation = -3.1415925
 scale = Vector2(0.10121452, -0.11983545)
 sprite_frames = SubResource("SpriteFrames_85w7r")
@@ -1213,7 +1213,7 @@ animation = &"no ball"
 script = ExtResource("19_a6jrf")
 
 [node name="CB1" type="AnimatedSprite2D" parent="Defender" unique_id=575293001]
-position = Vector2(445.75275, 208.06226)
+position = Vector2(379.00003, 172)
 rotation = -3.1384673
 scale = Vector2(0.11338874, -0.12890443)
 skew = -0.0015047789
@@ -1222,7 +1222,7 @@ animation = &"no ball"
 script = ExtResource("19_a6jrf")
 
 [node name="CB3" type="AnimatedSprite2D" parent="Defender" unique_id=943607282]
-position = Vector2(598.1886, 203.51686)
+position = Vector2(353.00003, 381)
 rotation = -3.1415925
 scale = Vector2(0.09501542, -0.1354038)
 sprite_frames = SubResource("SpriteFrames_85w7r")

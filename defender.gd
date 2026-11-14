@@ -2,7 +2,7 @@ extends AnimatedSprite2D
 
 signal tackled
 
-@export var speed: float = 50.0 
+@export var speed: float = 45.0 
 @export var tackle_distance: float = 24.0
 
 var start_position: Vector2

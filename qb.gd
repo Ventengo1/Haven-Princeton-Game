@@ -1,7 +1,7 @@
 extends Node2D #file for Joe the GOATTTTT
 
 @export var sack_time: float = 4.5
-@export var touchdown_x: float = 1100.0
+@export var touchdown_x: float = 950.0
 @export var pass_speed: float = 300.0
 
 @onready var qb = $QB
