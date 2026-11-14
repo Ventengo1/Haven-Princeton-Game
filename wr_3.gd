@@ -1,7 +1,6 @@
-
 extends AnimatedSprite2D
 
-@export var speed: float = 65.0
+@export var speed: float = 100.0
 
 var running = false
 var controllable = false
@@ -39,6 +38,9 @@ func _process(delta):
 		if direction.length() > 0:
 			position += direction.normalized() * speed * delta
 
+		# Clamp the vertical position strictly between 150 and 1000
+		position.y = clamp(position.y, 150.0, 1000.0)
+
 	elif running:
 		route_distance += speed * delta
 
@@ -70,4 +72,5 @@ func reset_route():
 	controllable = false
 	route_distance = 0.0
 	position = start_position
-	stop()
+	if sprite_frames != null:
+		stop()

@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://bkk4air0sebn1" path="res://wr_2.gd" id="13_cegan"]
 [ext_resource type="Script" uid="uid://5gevbe3a5445" path="res://te_1.gd" id="15_cegan"]
 [ext_resource type="Script" uid="uid://8qb0q6yrba55" path="res://rb.gd" id="16_82xsv"]
+[ext_resource type="Script" uid="uid://c3tyc0j1r7ckv" path="res://defender.gd" id="19_a6jrf"]
 [ext_resource type="Texture2D" uid="uid://c24475uhiush1" path="res://ball.png" id="21_getpj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
@@ -1016,23 +1017,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_85w7r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_w48qg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_vivmo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_2cqfq")
-}],
-"loop": 1,
-"name": &"no ball",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_jkeq5"]
 animations = [{
 "frames": [{
@@ -1049,6 +1033,23 @@ animations = [{
 }],
 "loop": 1,
 "name": &"no Ball",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_85w7r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_w48qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vivmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2cqfq")
+}],
+"loop": 1,
+"name": &"no ball",
 "speed": 5.0
 }]
 
@@ -1084,78 +1085,42 @@ position = Vector2(27, 18)
 scale = Vector2(0.37952963, 0.41724306)
 
 [node name="WR3" type="AnimatedSprite2D" parent="Player" unique_id=901339676]
-position = Vector2(289.83246, 591.4965)
+position = Vector2(389.9564, 618.3446)
 scale = Vector2(0.20268002, 0.17737195)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
 animation = &"no ball"
 script = ExtResource("12_cegan")
 
 [node name="WR1" type="AnimatedSprite2D" parent="Player" unique_id=1752282770]
-position = Vector2(547.8863, 623.8146)
+position = Vector2(645.5359, 174.95798)
 scale = Vector2(0.21611924, 0.18149038)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
 animation = &"no ball"
 script = ExtResource("12_074og")
 
 [node name="WR2" type="AnimatedSprite2D" parent="Player" unique_id=348595047]
-position = Vector2(733.3963, 415.82727)
+position = Vector2(600, 415)
 scale = Vector2(0.29964182, 0.2196877)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
 animation = &"no ball"
 script = ExtResource("13_cegan")
 
 [node name="TE1" type="AnimatedSprite2D" parent="Player" unique_id=187512676]
-position = Vector2(572.07623, 508.18433)
+position = Vector2(600.362, 800.657)
 scale = Vector2(0.2518316, 0.19943286)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
 animation = &"no ball"
 script = ExtResource("15_cegan")
 
 [node name="RB" type="AnimatedSprite2D" parent="Player" unique_id=1987113820]
-position = Vector2(370.57996, 509.30905)
+position = Vector2(600.035, 975.211)
 scale = Vector2(0.20716336, 0.17171718)
 sprite_frames = SubResource("SpriteFrames_bdj7s")
 animation = &"no ball"
 script = ExtResource("16_82xsv")
 
-[node name="Def 1" type="AnimatedSprite2D" parent="Player" unique_id=575293001]
-position = Vector2(1103.3467, 455.5193)
-rotation = -3.1387498
-scale = Vector2(0.298761, -0.3089434)
-skew = -0.0010610819
-sprite_frames = SubResource("SpriteFrames_85w7r")
-animation = &"no ball"
-
-[node name="Def 2" type="AnimatedSprite2D" parent="Player" unique_id=1839850335]
-position = Vector2(1305.788, 460.0854)
-rotation = 3.1415927
-scale = Vector2(0.26668411, -0.28720778)
-sprite_frames = SubResource("SpriteFrames_85w7r")
-animation = &"no ball"
-
-[node name="Def 3" type="AnimatedSprite2D" parent="Player" unique_id=943607282]
-position = Vector2(1504.9908, 444.6254)
-rotation = 3.1415927
-scale = Vector2(0.25035048, -0.32452017)
-sprite_frames = SubResource("SpriteFrames_85w7r")
-animation = &"no ball"
-
-[node name="Def 4" type="AnimatedSprite2D" parent="Player" unique_id=1065299163]
-position = Vector2(855.59937, 526.5794)
-rotation = 3.1415927
-scale = Vector2(0.25985944, -0.2790593)
-sprite_frames = SubResource("SpriteFrames_85w7r")
-animation = &"no ball"
-
-[node name="Def 5" type="AnimatedSprite2D" parent="Player" unique_id=651100651]
-position = Vector2(831.60583, 706.60864)
-rotation = 3.1415927
-scale = Vector2(0.26736405, -0.25461334)
-sprite_frames = SubResource("SpriteFrames_85w7r")
-animation = &"no ball"
-
 [node name="QB" type="AnimatedSprite2D" parent="." unique_id=1129669833]
-position = Vector2(182.00002, 171.00002)
+position = Vector2(225, 275)
 scale = Vector2(0.082524605, 0.08015135)
 sprite_frames = SubResource("SpriteFrames_jkeq5")
 animation = &"no Ball"
@@ -1228,3 +1193,46 @@ texture = ExtResource("21_getpj")
 [node name="StatusLabel" type="Label" parent="UI" unique_id=546464425]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Defender" type="CharacterBody2D" parent="." unique_id=1616655374]
+
+[node name="CB5" type="AnimatedSprite2D" parent="Defender" unique_id=651100651]
+position = Vector2(342.61905, 312.82755)
+rotation = -3.1415925
+scale = Vector2(0.10147258, -0.10623565)
+sprite_frames = SubResource("SpriteFrames_85w7r")
+animation = &"no ball"
+script = ExtResource("19_a6jrf")
+
+[node name="CB2" type="AnimatedSprite2D" parent="Defender" unique_id=1839850335]
+position = Vector2(522.5852, 209.96744)
+rotation = -3.1415925
+scale = Vector2(0.10121452, -0.11983545)
+sprite_frames = SubResource("SpriteFrames_85w7r")
+animation = &"no ball"
+script = ExtResource("19_a6jrf")
+
+[node name="CB1" type="AnimatedSprite2D" parent="Defender" unique_id=575293001]
+position = Vector2(445.75275, 208.06226)
+rotation = -3.1384673
+scale = Vector2(0.11338874, -0.12890443)
+skew = -0.0015047789
+sprite_frames = SubResource("SpriteFrames_85w7r")
+animation = &"no ball"
+script = ExtResource("19_a6jrf")
+
+[node name="CB3" type="AnimatedSprite2D" parent="Defender" unique_id=943607282]
+position = Vector2(598.1886, 203.51686)
+rotation = -3.1415925
+scale = Vector2(0.09501542, -0.1354038)
+sprite_frames = SubResource("SpriteFrames_85w7r")
+animation = &"no ball"
+script = ExtResource("19_a6jrf")
+
+[node name="CB4" type="AnimatedSprite2D" parent="Defender" unique_id=1065299163]
+position = Vector2(351.7253, 237.71161)
+rotation = -3.1415925
+scale = Vector2(0.098624356, -0.11643555)
+sprite_frames = SubResource("SpriteFrames_85w7r")
+animation = &"no ball"
+script = ExtResource("19_a6jrf")
