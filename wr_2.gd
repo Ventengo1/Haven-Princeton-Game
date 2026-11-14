@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-@export var speed: float = 110.0
+@export var speed: float = 100.0
 
 var running = false
 var controllable = false
